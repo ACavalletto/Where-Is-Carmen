@@ -43,9 +43,8 @@ AND c.name != 'San Marino';
 -- headed to, but doesn't end the same. Find out the city, and do another search for what country it's in. Hurry!
 
 -- Write SQL query here
-SELECT * FROM country
-JOIN city on country.code = city.countrycode
-WHERE city.name LIKE '%SERRA';
+SELECT * FROM city
+WHERE name LIKE 'Serr%';
 --Brazil
 
 -- Clue #6: We're close! Our South American agent says she just got a taxi at the airport, and is headed towards
